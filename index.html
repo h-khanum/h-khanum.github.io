@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hafsa Khanum | Data Science Portfolio</title>
+  <meta name="description" content="Data Science student specializing in Python, Machine Learning, and Data Visualization.">
+  <meta property="og:title" content="Hafsa Khanum | Data Science Portfolio">
+  <meta property="og:description" content="Turning messy data into meaningful insights — one model at a time.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Latin fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Urdu-capable font (Arabic script) -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <a href="#home" class="logo">Hafsa<span>Khanum</span></a>
+      </div>
+      <nav class="main-nav" aria-label="Primary">
+        <select id="langSelect" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="ur">UR</option>
+          <option value="ko">KO</option>
+        </select>
+        <button id="themeToggle" class="btn-outline" aria-label="Toggle theme">☾</button>
+        <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a>
+        <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
+        <a href="#education" class="nav-link" data-i18n="nav.education">Education</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container section">
+      <div class="hero-text">
+        <h1 class="headline">
+          <span data-i18n="hero.title">Data Science student</span>
+          <span class="accent" data-i18n="hero.tagline">turning messy data into clear decisions.</span>
+        </h1>
+        <p class="subhead" data-i18n="hero.sub">I love wrangling data, building models, and telling stories with visuals.</p>
+        <div class="cta-row">
+          <a href="#projects" class="btn-primary" data-i18n="cta.seeProjects">See Projects</a>
+          <a href="assets/Hafsa_Khanum_CV.pdf" class="btn-ghost" download data-i18n="cta.downloadCV">Download CV</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="blob b1"></div>
+        <div class="blob b2"></div>
+        <div class="blob b3"></div>
+      </div>
+    </section>
+
+    <section id="about" class="container section about-wrap">
+      <h2 class="section-title" data-i18n="about.title">About</h2>
+      <div class="about-grid">
+        <img src="assets/avatar.png" alt="Abstract avatar for Hafsa Khanum" class="avatar">
+        <div>
+          <p class="lead" data-i18n="about.lead">I’m <strong>Hafsa Khanum</strong>, a Data Science student focused on practical machine learning, clean analysis, and beautiful, honest visualization. My interests include model interpretability, ethical AI, and turning raw datasets into something people can actually use.</p>
+          <p data-i18n="about.body">Right now I’m building strong fundamentals in <em>Python</em>, <em>statistics</em>, and <em>ML</em> — and documenting my learning in public. I’m actively looking for internships and collaborative projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container section">
+      <div class="section-top">
+        <h2 class="section-title" data-i18n="projects.title">Projects</h2>
+        <div class="filters" role="tablist" aria-label="Project filters">
+          <button class="chip active" data-filter="all" role="tab" aria-selected="true" data-i18n="filters.all">All</button>
+          <button class="chip" data-filter="ml" role="tab" data-i18n="filters.ml">ML</button>
+          <button class="chip" data-filter="nlp" role="tab" data-i18n="filters.nlp">NLP</button>
+          <button class="chip" data-filter="viz" role="tab" data-i18n="filters.viz">Visualization</button>
+        </div>
+      </div>
+      <div class="grid cards" id="projectGrid">
+        <article class="card project" data-tags="ml">
+          <div class="card-body">
+            <h3 class="card-title" data-i18n="proj1.title">XGBoost — Cancer Prediction</h3>
+            <p class="card-text" data-i18n="proj1.desc">End-to-end pipeline: data cleaning, feature engineering, model training, and evaluation with explainability.</p>
+          </div>
+          <div class="card-footer">
+            <a class="btn-link" href="https://github.com/h-khanum/xgboost-cancer" target="_blank" rel="noopener" data-i18n="links.github">GitHub ↗</a>
+            <span class="tag" data-i18n="tags.ml">ML</span>
+          </div>
+        </article>
+
+        <article class="card project" data-tags="viz">
+          <div class="card-body">
+            <h3 class="card-title" data-i18n="proj2.title">City Mobility Dashboard</h3>
+            <p class="card-text" data-i18n="proj2.desc">Interactive dashboard exploring commute patterns and bottlenecks; highlights actionable insights.</p>
+          </div>
+          <div class="card-footer">
+            <a class="btn-link" href="https://github.com/h-khanum/city-mobility-dashboard" target="_blank" rel="noopener" data-i18n="links.github">GitHub ↗</a>
+            <span class="tag" data-i18n="tags.viz">Visualization</span>
+          </div>
+        </article>
+
+        <article class="card project" data-tags="nlp">
+          <div class="card-body">
+            <h3 class="card-title" data-i18n="proj3.title">Mental Health in Text</h3>
+            <p class="card-text" data-i18n="proj3.desc">NLP signals for stress & mood from journaling data; careful with ethics and privacy.</p>
+          </div>
+          <div class="card-footer">
+            <a class="btn-link" href="https://github.com/h-khanum/mental-health-nlp" target="_blank" rel="noopener" data-i18n="links.github">GitHub ↗</a>
+            <span class="tag" data-i18n="tags.nlp">NLP</span>
+          </div>
+        </article>
+
+        <article class="card project soon" data-tags="ml nlp viz">
+          <div class="card-body">
+            <h3 class="card-title" data-i18n="proj4.title">More coming soon</h3>
+            <p class="card-text" data-i18n="proj4.desc">I’m actively building new projects. Follow my GitHub for updates.</p>
+          </div>
+          <div class="card-footer">
+            <a class="btn-link" href="https://github.com/h-khanum" target="_blank" rel="noopener" data-i18n="links.profile">GitHub Profile ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container section">
+      <h2 class="section-title" data-i18n="skills.title">Skills</h2>
+      <div class="grid skills-grid">
+        <div class="skill-col">
+          <h3 data-i18n="skills.lang">Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>R (basic)</li>
+          </ul>
+        </div>
+        <div class="skill-col">
+          <h3 data-i18n="skills.tools">Libraries & Tools</h3>
+          <ul>
+            <li>NumPy, Pandas</li>
+            <li>scikit-learn, XGBoost</li>
+            <li>Matplotlib, Plotly</li>
+            <li>Jupyter Notebook</li>
+          </ul>
+        </div>
+        <div class="skill-col">
+          <h3 data-i18n="skills.concepts">Concepts</h3>
+          <ul>
+            <li>Statistics & EDA</li>
+            <li>Supervised/Unsupervised ML</li>
+            <li>Model evaluation & validation</li>
+            <li>Feature engineering</li>
+          </ul>
+        </div>
+        <div class="skill-col">
+          <h3 data-i18n="skills.other">Other</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>Basic Linux/CLI</li>
+            <li>Communication & storytelling</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="container section">
+      <h2 class="section-title" data-i18n="edu.title">Education</h2>
+      <p><strong data-i18n="edu.degree">Bachelor of Science in Data Science</strong> — <span data-i18n="edu.uni">University of Engineering and Technology (UET) Peshawar</span><br/><span data-i18n="edu.years">2022–2026</span></p>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:hafsaa.khanum@gmail.com">
+          <span class="icon">✉</span>
+          <span data-i18n="contact.email">Email</span>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/h-khanum/" target="_blank" rel="noopener">
+          <span class="icon">in</span>
+          <span>LinkedIn</span>
+        </a>
+        <a class="contact-card" href="https://github.com/h-khanum" target="_blank" rel="noopener">
+          <span class="icon">{}</span>
+          <span>GitHub</span>
+        </a>
+        <a class="contact-card" href="https://x.com/khanamana" target="_blank" rel="noopener">
+          <span class="icon">𝕏</span>
+          <span>Twitter / X</span>
+        </a>
+      </div>
+
+      <div class="cta-banner">
+        <h3 data-i18n="cta.work">Work with me</h3>
+        <p data-i18n="cta.pitch">Have an idea or dataset? I’d love to collaborate.</p>
+        <a href="mailto:hafsaa.khanum@gmail.com" class="btn-primary" data-i18n="cta.contact">Get in touch</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Hafsa Khanum. <span data-i18n="footer.built">Built with love & clean CSS.</span> <button id="scrollTop" class="btn-link" data-i18n="footer.top">Back to top ↑</button></p>
+      <p class="small" data-i18n="footer.langs">Languages (future): English · Urdu · Korean</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="translate.js"></script>
+</body>
+</html>
